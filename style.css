@@ -196,36 +196,32 @@ body {
   
   /* Small Devices, Tablets */
   @media only screen and (min-width : 768px) {
-    nav ul {
-        position: absolute;
-        width: 100%;
-        top: 80px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height .3s ease-in-out;
-        background: #000000;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        text-align: center; /* Voeg deze regel toe */
-      }
-      
-      nav ul li {
-        display: inline-block; /* Wijzig display naar inline-block */
-        border: none; /* Verwijder de border */
-      }
-      
-      nav ul li a {
-        padding: 0 10px;
-        line-height: 80px;
-        height: 80px;
-        display: inline-block; /* Voeg deze regel toe */
-      }
-      
+  
     nav .toggle {
       display: none;
     }
-    
+  
+    nav ul {
+      position: relative;
+      max-height: none;
+      float: right;
+      background: none;
+      top: auto;
+      width: auto;
+    }
+  
+    nav ul li {
+      display: inline-block;
+      text-align: center;
+      border: 0;
+    }
+  
+    nav ul li a {
+      padding: 0 10px;
+      line-height: 80px;
+      height: 80px;
+    }
+  
     nav ul li a:hover {
       color: #FEEFDD;
     }
